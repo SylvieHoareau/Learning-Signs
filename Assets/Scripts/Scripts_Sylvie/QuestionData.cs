@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class QuestionData
+public class Question
 {
-    
+
 }
 public class QuestionData : MonoBehaviour
 {
