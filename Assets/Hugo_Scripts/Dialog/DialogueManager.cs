@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using TMPro;
 using System.Collections;
+using UnityEngine.InputSystem;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -31,7 +32,6 @@ public class DialogueManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             jsonFile = Resources.Load<TextAsset>("Dialogue");
             DeserializedJson();
-            NextStep(npc);
         }
         else
         {
@@ -50,8 +50,11 @@ public class DialogueManager : MonoBehaviour
         skipText = false;
     }
 
-    public void NextStep(NPCControler npc)
+    public void NextStep(InputAction.CallbackContext context)
     {
+
+        if (context.performed && context.ReadValue<float>() == 1)
+        {
         ResetStateDialog();
 
         if (typeScriptCoroutine != null) { StopCoroutine(typeScriptCoroutine); }
@@ -88,7 +91,9 @@ public class DialogueManager : MonoBehaviour
                 }
             }
         }
+        }
     }
+    
 
     public void TypescriptEffect(string str)
     {

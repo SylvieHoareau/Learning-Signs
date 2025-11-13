@@ -2,12 +2,12 @@
 "conversation": [
     {
         "id" : "npc_marcel1",
-        "maxDialog": "2",
+        "maxDialog": "1",
         "steps":[
         {
         "id": "0",
         "name": "Marcel",
-        "text": "<color=orange>Bonjour</color>, \n[w=0,2]aventurier[w=0,05] !",
+        "text": "<color=orange>Bonjour</color>, [w=0,1]aventurier[w=0,05] !",
         "event": "Trigger",
         "next": "1"
         },
@@ -38,7 +38,7 @@
         {
         "id": "0",
         "name": "Player",
-        "text": "<color=orange>Au revoir</color>, \n[w=0,2]bonhomme[w=0,05] !",
+        "text": "<color=orange>Au revoir</color>, [w=0,2]bonhomme[w=0,05] !",
         "next": "1"
         },
         {
