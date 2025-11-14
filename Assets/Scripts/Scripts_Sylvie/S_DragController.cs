@@ -1,8 +1,9 @@
+using NUnit.Framework;
 using UnityEngine;
 
 public class DragController : MonoBehaviour
 {
-    public Draggable lastDragged => _lastDragged;
+    public S_Draggable lastDragged => _lastDragged;
 
     private bool _isDragActive = false;
 
@@ -10,7 +11,7 @@ public class DragController : MonoBehaviour
 
     private Vector3 _worldPosition;
 
-    private Draggable _lastDragged;
+    private S_Draggable _lastDragged;
 
     void Awake()
     {
@@ -54,7 +55,7 @@ public class DragController : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(_worldPosition, Vector2.zero);
             if (hit.collider != null)
             {
-                Draggable draggable = hit.collider.GetComponent<Draggable>();
+                S_Draggable draggable = hit.collider.GetComponent<S_Draggable>();
                 if (draggable != null)
                 {
                     _lastDragged = draggable;
@@ -66,7 +67,7 @@ public class DragController : MonoBehaviour
 
     public void InitDrag() 
     {
-        _lastDragged.LastPosition = _lastDragged.transform.position;
+        // _lastDragged.LastPosition = _lastDragged.transform.position;
         UpdateDragStatus(true);
     }
 
@@ -82,7 +83,8 @@ public class DragController : MonoBehaviour
 
     public void UpdateDragStatus(bool IsDragging)
     {
-        _isDragActive = _lastDragged.IsDragging = IsDragging;
+        _isDragActive = IsDragging;
+        // _lastDragged.IsDragging = IsDragging;
         _lastDragged.gameObject.layer = IsDragging ? Layer.Dragging : Layer.Default;
         // if (IsDragging)
         // {
