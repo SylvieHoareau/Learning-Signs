@@ -6,27 +6,27 @@
         "steps":[
         {
         "id": "0",
-        "name": "Marcel",
-        "text": "<color=orange>Bonjour</color>, [w=0,1]aventurier[w=0,05] !",
-        "event": "Trigger",
+        "name": "Manu",
+        "text": "Whoa tu veux aller au resto?! T'es malade! Je ne sais même pas dire un mot en langue des signes, comment je vais faire pour me fondre dans la masse.!",
         "next": "1"
         },
         {
         "id": "1",
-        "name": "Player",
-        "text": "Fin de dialogue !",
+        "name": "Mimo",
+        "text": "T'inquiète pas, je t'apprend les bases vite fait et on y va. Tout va bien se passer! Et tu sais pourquoi? Car la cavalerie est là! ",
         "next": "2"
         },
         {
         "id": "2",
-        "name": "Marcel",
-        "text": "Fin Alternative",
-        "next": null
+        "name": "Mimo",
+        "text": "(en langue des signes): Bonjour",
+        "event": "Bonjour",
+        "next": "3"
         },
         {
         "id": "3",
-        "name": "Player",
-        "text": "Bonus text",
+        "name": "Mimo",
+        "text": "C'est comme ça qu'on dit bonjour. Allez, à ton tour!",
         "next": null
         }
         ]

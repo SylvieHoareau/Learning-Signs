@@ -23,6 +23,14 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private NPCControler npc;
 
     [SerializeField] private GameObject dialogBox;
+    [SerializeField] private UnityEngine.UI.Image PlayerPicture;
+    [SerializeField] private UnityEngine.UI.Image MimoPicture;
+    [SerializeField] private GameObject bubble;
+
+    private Color highlighedColor = new Color(255f,255f,255f,255f);
+    private Color darklightedColor = new Color(100f,100f,100f,255f);
+
+    private string saveText;
 
     void Awake()
     {
@@ -55,42 +63,63 @@ public class DialogueManager : MonoBehaviour
 
         if (context.performed && context.ReadValue<float>() == 1)
         {
-        ResetStateDialog();
+            if (typeScriptCoroutine != null) 
+            { 
+                StopCoroutine(typeScriptCoroutine);
+                textMP.text = saveText;
+                typeScriptCoroutine = null;
+                return;
+            }
+            
+            ResetStateDialog();
 
-        if (typeScriptCoroutine != null) { StopCoroutine(typeScriptCoroutine); }
-
-        foreach (var conv in dataConversation.Conversations)
-        {
-            if (conv.Id == npc.id + npc.numberDialog.ToString())
+            foreach (var conv in dataConversation.Conversations)
             {
-
-                if (currentStep != -1)
-                    TypescriptEffect(conv.Steps[currentStep].Text);
-                else
+                if (conv.Id == npc.id + npc.numberDialog.ToString())
                 {
-                    dialogBox.SetActive(false);
-                    currentStep = 0;
-                    return;
-                }
 
-                if (conv.Steps[currentStep].Event != null)
-                    EventTrigger?.Invoke(conv.Steps[currentStep].Event);
+                    if (currentStep != -1)
+                        TypescriptEffect(conv.Steps[currentStep].Text);
+                    else
+                    {
+                        currentStep = 0;
+                        return;
+                    }
+
+                    if (conv.Steps[currentStep].Name == "Mimo")
+                    {
+                        MimoPicture.color = Color.white;
+                        PlayerPicture.color = Color.gray;
+                    } else if (conv.Steps[currentStep].Name == "Manu")
+                    {
+                        MimoPicture.color = Color.gray;
+                        PlayerPicture.color = Color.white;
+                    }
+
+                    if (conv.Steps[currentStep].Event != null) {
+                        bubble.SetActive(true);
+                        EventTrigger?.Invoke(conv.Steps[currentStep].Event);
+                    } else
+                    {
+                        if (bubble.activeSelf)
+                            bubble.SetActive(false);
+                    }
  
 
-                if (conv.Steps[currentStep].Next == null)
-                {
-                    currentStep = -1;
-                    npc.numberDialog += 1;
-                    Debug.Log(npc.numberDialog);
-                    if (npc.numberDialog > int.Parse(conv.MaxDialog)) npc.numberDialog = 1;
-                    return;
-                }
-                else
-                {
-                    currentStep = int.Parse(conv.Steps[currentStep].Next);
+                    if (conv.Steps[currentStep].Next == null)
+                    {
+                        currentStep = -1;
+                        npc.numberDialog += 1;
+                        Debug.Log(npc.numberDialog);
+                        if (npc.numberDialog > int.Parse(conv.MaxDialog)) npc.numberDialog = 1;
+                        return;
+                    }
+                    else
+                    {
+                        currentStep = int.Parse(conv.Steps[currentStep].Next);
+                    }
                 }
             }
-        }
         }
     }
     
@@ -103,6 +132,7 @@ public class DialogueManager : MonoBehaviour
     IEnumerator WaitForTypescript(string str)
     {
         int i = 0;
+        saveText = str;
 
         while (i < str.Length)
         {
