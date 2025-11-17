@@ -19,4 +19,9 @@ public class S_SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void CheckMyKnowledges()
+    {
+        SceneManager.LoadScene("Choices_Politesse");
+    }
 }
