@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 3de388929fc622f48825cd2456100ae0
+  - enabled: 1
+    path: Assets/Scenes/Scenes_Sylvie/Bases_Politesse.unity
+    guid: e875b10efaa5840438736b51952bb34e
+  - enabled: 1
     path: Assets/Scenes/Scenes_Sylvie/Choices_Politesse.unity
     guid: aa9f7ef53cc340b4c87604042079a54c
   m_configObjects:
