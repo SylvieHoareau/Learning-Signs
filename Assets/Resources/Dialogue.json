@@ -27,6 +27,7 @@
         "id": "3",
         "name": "Mimo",
         "text": "C'est comme ça qu'on dit bonjour. Allez, à ton tour!",
+        "event": "GoGameplay1",
         "next": null
         }
         ]
