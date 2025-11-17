@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class S_DragQCMManager : MonoBehaviour
 {
@@ -18,7 +20,7 @@ public class S_DragQCMManager : MonoBehaviour
 
         if(all_correct)
         {
-            // Continue to next game
+            SceneManager.LoadScene("HugoLabo");
         }
         else
         {
