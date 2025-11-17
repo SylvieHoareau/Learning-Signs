@@ -5988,7 +5988,7 @@ MonoBehaviour:
   - {fileID: 524914551}
   - {fileID: 2091348849}
   - {fileID: 1920983905}
-  wrongFeedbackPanel: {fileID: 0}
+  wrongFeedbackPanel: {fileID: 1369892474}
 --- !u!1 &1920983901
 GameObject:
   m_ObjectHideFlags: 0
