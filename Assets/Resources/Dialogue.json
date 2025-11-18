@@ -1,0 +1,151 @@
+{
+"conversation": [
+    {
+        "id" : "first_scene1",
+        "maxDialog": "1",
+        "steps":[
+        {
+        "id": "0",
+        "name": "Manu",
+        "text": "Whoa tu veux aller au resto?! T'es malade! Je ne sais même pas dire un mot en langue des signes, comment je vais faire pour me fondre dans la masse.!",
+        "next": "1"
+        },
+        {
+        "id": "1",
+        "name": "Mimo",
+        "text": "T'inquiète pas, je t'apprend les bases vite fait et on y va. Tout va bien se passer! Et tu sais pourquoi? Car la cavalerie est là! ",
+        "next": "2"
+        },
+        {
+        "id": "2",
+        "name": "Mimo",
+        "text": "(en langue des signes): Bonjour",
+        "event": "Bonjour",
+        "next": "3"
+        },
+        {
+        "id": "3",
+        "name": "Mimo",
+        "text": "C'est comme ça qu'on dit bonjour. Allez, à ton tour!",
+        "event": "None",
+        "next": "4"
+        },
+        {
+        "id": "4",
+        "name": "Mimo",
+        "text": "",
+        "event": "GoGameplay1",
+        "next": null
+        }
+        ]
+    },
+    {
+        "id" : "second_scene1",
+        "maxDialog": "1",
+        "steps":[
+        {
+        "id": "0",
+        "name": "Manu",
+        "text": "Bravo tu as réussi !",
+        "next": "1"
+        },
+        {
+        "id": "1",
+        "name": "Mimo",
+        "text": "Fin de dialogue !",
+        "next": "2"
+        },
+        {
+        "id": "2",
+        "name": "Manu",
+        "text": "Fin Alternative",
+        "next": "3"
+        },
+        {
+        "id": "3",
+        "name": "Mimo",
+        "text": "Bonus text",
+        "next": null
+        }
+        ]
+    },
+    {
+        "id" : "player1",
+        "maxDialog": "1",
+        "steps":[
+        {
+        "id": "0",
+        "name": "Player",
+        "text": "Je ne me souviens de rien,",
+        "next": "1"
+        },
+        {
+        "id": "1",
+        "name": "Player",
+        "text": "Mais pourtant, je sais ce que je dois faire.",
+        "next": "2"
+        },
+        {
+        "id": "2",
+        "name": "Player",
+        "text": "L'humanité a été prévenue, \ntoutefois,\n [w=0,2]la fin est proche.[w=0,05]",
+        "next": "3"
+        },
+        {
+        "id": "3",
+        "name": "Player",
+        "text": "Ce que je sais, \nc'est que je suis le dernier espoir.",
+        "next": null
+        }
+        ]
+    },
+    {
+        "id" : "first_ghost1",
+        "maxDialog": "1",
+        "steps":[
+        {
+        "id": "0",
+        "name": "Playe",
+        "text": "Ah, tu es donc le dernier",
+        "next": "1"
+        },
+        {
+        "id": "1",
+        "name": "Player",
+        "text": "Qui es-tu ?.",
+        "next": "2"
+        },
+        {
+        "id": "2",
+        "name": "Playe",
+        "text": "Moi ?\nJe souhaitais sauver le monde,\nmais comme tu peux le constater,\nj'ai échoué.",
+        "next": "3"
+        },
+        {
+        "id": "3",
+        "name": "Playe",
+        "text": "Mon âme est attaché à ce lieu.\nPour attendre le fond du donjon,\n tu vas devoir résoudre des énigmes.",
+        "next": "4"
+        },
+        {
+        "id": "4",
+        "name": "Playe",
+        "text": "Nous autres les fantômes, pouvons-t-aider.",
+        "next": "5"
+        },
+        {
+        "id": "5",
+        "name": "Playe",
+        "text": "Toutefois, hâte-toi. \nSi tu perds du temps à cuire un oeuf dur, \nil sera peut-être déjà trop tard...",
+        "next": "6"
+        },
+        {
+        "id": "6",
+        "name": "Playe",
+        "text": "<color=red>Sun Sothoth arrive</color>.",
+        "next": null
+        } 
+        ]
+    }
+    ]
+}
