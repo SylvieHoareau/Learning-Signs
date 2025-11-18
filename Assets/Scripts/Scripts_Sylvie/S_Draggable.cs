@@ -10,11 +10,11 @@ public class S_Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     private CanvasGroup canvasGroup;
     private Canvas canvas;
     public RectTransform rectTransform;
-    [HideInInspector]
-    public Transform originalParent;
+    [HideInInspector] public Transform originalParent;
+    [HideInInspector] public Vector2 originalAnchoredPos;
+
     public S_DropSlot current_slot;
     private Vector3 startPosition;
-
 
     void Awake()
     {
@@ -22,14 +22,17 @@ public class S_Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         canvasGroup = GetComponent<CanvasGroup>();
         canvas = GetComponentInParent<Canvas>();
 
-        startPosition = rectTransform.anchoredPosition;
+        // On stocke la position et le parent d'origine
+        // startPosition = rectTransform.anchoredPosition;
         originalParent = transform.parent;
+        originalAnchoredPos = rectTransform.anchoredPosition;
+
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
 
-        if(current_slot)
+        if(current_slot != null)
         {
             current_slot.cardInSlot = null;
             current_slot = null;
@@ -60,12 +63,19 @@ public class S_Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
             // transform.SetParent(originalParent);
             // transform.localPosition = Vector3.zero; // replace correctement dans le layout original 
         }
+
+        // Si la carte n’a PAS été placée dans un slot
+        if (current_slot == null)
+        {
+            ResetPos();
+        }
     }
 
     public void ResetPos()
     {
         transform.parent = originalParent;
         rectTransform.anchoredPosition = startPosition;
+        current_slot = null;
     }
 
 }

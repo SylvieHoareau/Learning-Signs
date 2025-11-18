@@ -33,7 +33,6 @@ public class S_DropSlot : MonoBehaviour, IDropHandler
         card.current_slot = this;
         card.transform.SetParent(transform);
         card.rectTransform.anchoredPosition = Vector2.zero;
-        
     }
 
     public bool CheckSlot()
@@ -42,16 +41,20 @@ public class S_DropSlot : MonoBehaviour, IDropHandler
 
         if (cardInSlot.id == expectedID)
         {
-            Debug.Log("Bonne réponse !");
-            slotImage.color = correctColor;
+            Debug.Log($"{gameObject.name} : Bonne réponse !");
+            if (slotImage != null)
+                slotImage.color = correctColor;
             return true;
         }
         else
         {
-            Debug.Log("Mauvaise réponse");
-            slotImage.color = incorrectColor;
+            Debug.Log($"{gameObject.name} : Mauvaise réponse...");
+
+            if (slotImage != null)
+                slotImage.color = incorrectColor;
             // rejeter la carte si la réponse est fausse
-            cardInSlot.transform.SetParent(cardInSlot.originalParent);
+            // cardInSlot.transform.SetParent(cardInSlot.originalParent);
+
             return false;
         }
     }

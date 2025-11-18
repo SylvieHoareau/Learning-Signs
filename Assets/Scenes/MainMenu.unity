@@ -2706,7 +2706,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1527749395491956190}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 633260dc72b1d7b45ab5b4b635d9f22b, type: 3}
   m_Name: 

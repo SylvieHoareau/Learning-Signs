@@ -20,8 +20,13 @@ public class S_SceneLoader : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void CheckMyKnowledges()
+    public void CheckMyKnowledges_Politesses()
     {
         SceneManager.LoadScene("Choices_Politesse");
+    }
+
+     public void CheckMyKnowledges_Restaurant()
+    {
+        SceneManager.LoadScene("Choices_Restaurant");
     }
 }
