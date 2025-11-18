@@ -30,6 +30,9 @@ public class S_DragQCMManager : MonoBehaviour
             }
             if (goodFeedbackPanel != null)
             {
+                SceneManager.LoadScene("HugoLabo");
+                KeepInLoad.Instance.ShowDialogue(true);
+                DialogueManager.Instance.isTalking = true;
                 goodFeedbackPanel.SetActive(true);
             }
             else
