@@ -9,7 +9,7 @@ public class S_GameManager : MonoBehaviour
     {
         if (AllSlotsFilled())
         {
-            Debug.Log("All slots filled correctly! Level Complete!");
+            //Debug.Log("All slots filled correctly! Level Complete!");
             // Trigger level complete actions here (e.g., load next level, show UI, etc.)
         }
     }

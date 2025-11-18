@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 390939792}
   - component: {fileID: 390939791}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: DialogPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62595b55ecaca294db9fc48ddd24aebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCControler
-  id: npc_marcel
+  id: npc_manu
   numberDialog: 1
 --- !u!4 &1084818116
 Transform:
@@ -772,12 +772,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084818114}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02607, y: 1.13641, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1556825976}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1119245680
 GameObject:
@@ -945,6 +945,7 @@ GameObject:
   - component: {fileID: 1522161560}
   - component: {fileID: 1522161559}
   - component: {fileID: 1522161563}
+  - component: {fileID: 1522161564}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1049,6 +1050,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   sign: {fileID: 1020195641}
   bonjour: {fileID: -855298285791758126, guid: 3c033c8d0ff9d2245ba6210dd9bec05a, type: 3}
+--- !u!114 &1522161564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522161558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67d89948fb23d974b8efebb31fb02e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeepInLoad
+  dialoguePanel: {fileID: 390939789}
 --- !u!1 &1556825974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +1111,8 @@ Transform:
   m_LocalPosition: {x: 0.02607, y: 1.13641, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1084818116}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1556825977
@@ -1302,5 +1317,4 @@ SceneRoots:
   - {fileID: 1556825976}
   - {fileID: 1522161562}
   - {fileID: 235316618}
-  - {fileID: 1084818116}
   - {fileID: 610162580}

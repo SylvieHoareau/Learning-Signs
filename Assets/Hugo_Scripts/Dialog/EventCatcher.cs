@@ -1,13 +1,25 @@
+using System;
+using UnityEditor.MPE;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class EventCatcher : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public static EventCatcher Instance;
+    public static event Action<bool> ChangeScene;
+    public static event Action<string> ChangeId;
+
     void Start()
     {
+        if (!Instance)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else
+        {
+            Destroy(gameObject);
+        }
+
         DialogueManager.EventTrigger += OnCatch;
     }
 
@@ -16,10 +28,23 @@ public class EventCatcher : MonoBehaviour
         switch (eventName)
         {
             case "GoGameplay1":
+                SendSignalScene(false);
+                SendSignalChangeId("second_scene");
+                DialogueManager.Instance.isTalking = false;
                 SceneManager.LoadScene("Choices_Politesse");
                 break;
             default:
                 break;
         }
+    }
+
+    public void SendSignalScene(bool bo)
+    {
+        ChangeScene?.Invoke(bo);
+    }
+
+    public void SendSignalChangeId(string id)
+    {
+        ChangeId?.Invoke(id);
     }
 }

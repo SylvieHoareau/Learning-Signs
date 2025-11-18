@@ -21,7 +21,9 @@ public class S_DragQCMManager : MonoBehaviour
         if(all_correct)
         {
             // Continue to next game
-            SceneManager.LoadScene("");
+            EventCatcher.Instance.SendSignalScene(true);
+            DialogueManager.Instance.isTalking = true;
+            SceneManager.LoadScene("HugoLabo");
         }
         else
         {

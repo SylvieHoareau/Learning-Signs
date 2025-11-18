@@ -4,6 +4,7 @@ public class MimoBubbleManager : MonoBehaviour
 {
     [SerializeField] private UnityEngine.UI.Image sign;
     [SerializeField] private Sprite bonjour;
+    [SerializeField] private GameObject bubble;
 
     void Start()
     {
@@ -15,7 +16,11 @@ public class MimoBubbleManager : MonoBehaviour
         switch (action)
         {
             case "Bonjour":
+                bubble.SetActive(true);
                 sign.sprite = bonjour;
+                break;
+            case "None":
+                bubble.SetActive(false);
                 break;
             default:
                 break;

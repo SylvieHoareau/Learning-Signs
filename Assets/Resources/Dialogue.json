@@ -1,7 +1,7 @@
 {
 "conversation": [
     {
-        "id" : "npc_marcel1",
+        "id" : "first_scene1",
         "maxDialog": "1",
         "steps":[
         {
@@ -27,6 +27,7 @@
         "id": "3",
         "name": "Mimo",
         "text": "C'est comme ça qu'on dit bonjour. Allez, à ton tour!",
+        "event": "None",
         "next": "4"
         },
         {
@@ -39,30 +40,30 @@
         ]
     },
     {
-        "id" : "npc_marcel2",
-        "maxDialog": "2",
+        "id" : "second_scene1",
+        "maxDialog": "1",
         "steps":[
         {
         "id": "0",
-        "name": "Player",
-        "text": "<color=orange>Au revoir</color>, [w=0,2]bonhomme[w=0,05] !",
+        "name": "Manu",
+        "text": "Bravo tu as réussi !",
         "next": "1"
         },
         {
         "id": "1",
-        "name": "Marcel",
+        "name": "Mimo",
         "text": "Fin de dialogue !",
-        "next": "3"
+        "next": "2"
         },
         {
         "id": "2",
-        "name": "Player",
+        "name": "Manu",
         "text": "Fin Alternative",
-        "next": null
+        "next": "3"
         },
         {
         "id": "3",
-        "name": "Player",
+        "name": "Mimo",
         "text": "Bonus text",
         "next": null
         }

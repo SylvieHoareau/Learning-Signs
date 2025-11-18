@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour
 
     private ConversationData dataConversation;
     [SerializeField] TextMeshProUGUI textMP;
-    private int currentStep = 0;
+    public int currentStep = 0;
     private Coroutine typeScriptCoroutine;
     private bool findTextBalise = false;
     private bool skipText = false;
@@ -32,6 +32,10 @@ public class DialogueManager : MonoBehaviour
 
     private string saveText;
 
+    private InputSystem_Actions inputAction;
+
+    public bool isTalking = true;
+
     void Awake()
     {
         if (Instance == null)
@@ -40,6 +44,13 @@ public class DialogueManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
             jsonFile = Resources.Load<TextAsset>("Dialogue");
             DeserializedJson();
+            inputAction = new InputSystem_Actions();
+            inputAction.Enable();
+
+            inputAction.UI.Click.started += NextStep;
+            inputAction.UI.Click.performed += NextStep;
+            inputAction.UI.Click.canceled += NextStep;
+
         }
         else
         {
@@ -61,7 +72,7 @@ public class DialogueManager : MonoBehaviour
     public void NextStep(InputAction.CallbackContext context)
     {
 
-        if (context.performed && context.ReadValue<float>() == 1)
+        if (context.performed && context.ReadValue<float>() == 1 && isTalking)
         {
             if (typeScriptCoroutine != null) 
             { 
@@ -97,12 +108,7 @@ public class DialogueManager : MonoBehaviour
                     }
 
                     if (conv.Steps[currentStep].Event != null) {
-                        bubble.SetActive(true);
                         EventTrigger?.Invoke(conv.Steps[currentStep].Event);
-                    } else
-                    {
-                        if (bubble.activeSelf)
-                            bubble.SetActive(false);
                     }
  
 
