@@ -206,8 +206,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -736,8 +736,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -885,8 +885,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1671,8 +1671,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2700,53 +2700,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1574470644
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1574470645}
-  - component: {fileID: 1574470646}
-  m_Layer: 0
-  m_Name: AccessibilityManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1574470645
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574470644}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 80.29276, y: 179.21568, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1574470646
+--- !u!114 &1574470646 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2534123562125989544, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+  m_PrefabInstance: {fileID: 1527749395491956190}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574470644}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 633260dc72b1d7b45ab5b4b635d9f22b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FontSizeController
-  targetSize: 30
-  updateInEditMode: 0
-  fontSizeSlider: {fileID: 1709371302}
 --- !u!1 &1631606131
 GameObject:
   m_ObjectHideFlags: 0
@@ -3624,8 +3588,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3688,6 +3652,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a77f0b890b2da5b49a95a3812c5a135b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FontSizeControlledText
+--- !u!1001 &1527749395491956190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2534123562125989544, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+      propertyPath: fontSizeSlider
+      value: 
+      objectReference: {fileID: 1709371302}
+    - target: {fileID: 4329272884658887625, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 80.29276
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329272884658887625, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 179.21568
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329272884658887625, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329272884658887625, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329272884658887625, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329272884658887625, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329272884658887625, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329272884658887625, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329272884658887625, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329272884658887625, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044028139790454726, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
+      propertyPath: m_Name
+      value: AccessibilityManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c9076519d47bff448729f3aeb78de8b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3695,4 +3720,4 @@ SceneRoots:
   - {fileID: 820595934}
   - {fileID: 782163366}
   - {fileID: 1519685242}
-  - {fileID: 1574470645}
+  - {fileID: 1527749395491956190}

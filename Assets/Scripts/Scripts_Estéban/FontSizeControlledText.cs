@@ -36,4 +36,6 @@ public class FontSizeControlledText : MonoBehaviour
         FontSizeController.OnSizeChanged -= UpdateSize;
         UpdateSize();
     }
+
+
 }

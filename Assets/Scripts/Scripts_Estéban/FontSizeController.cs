@@ -5,6 +5,7 @@ using UnityEngine.UI;
 [ExecuteInEditMode]
 public class FontSizeController : MonoBehaviour
 {
+    public static FontSizeController instance;
     public static int size = 20;
     public static event System.Action OnSizeChanged;
 
@@ -15,11 +16,18 @@ public class FontSizeController : MonoBehaviour
 
     private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this; 
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+            Destroy(gameObject);
+
         if (!Application.isPlaying) return;
         
         size = PlayerPrefs.GetInt("FontSize", 50);
         fontSizeSlider.value = size;
-
 
     }
 
