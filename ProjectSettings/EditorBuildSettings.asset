@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Scenes_Sylvie/Bases_Politesse.unity
     guid: e875b10efaa5840438736b51952bb34e
   - enabled: 1
-    path: Assets/Scenes/Scenes_Sylvie/Choices_Politesse.unity
+    path: Assets/Scenes/Scenes_Sylvie/Choices_Bonjour.unity
     guid: aa9f7ef53cc340b4c87604042079a54c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

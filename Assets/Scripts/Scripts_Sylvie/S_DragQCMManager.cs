@@ -5,32 +5,53 @@ public class S_DragQCMManager : MonoBehaviour
 {
     [SerializeField] private S_DropSlot[] slots;
     [SerializeField] private GameObject wrongFeedbackPanel;
-
+    [SerializeField] private GameObject goodFeedbackPanel;
 
     public void CheckAnswers()
     {
         bool all_correct = true;
         for (int i = 0; i < slots.Length; i++)
         {
-            if(!slots[i].CheckSlot())
-            {
-                all_correct = false;
-            }
+            if (!slots[i].isActiveAndEnabled) continue;
+            bool result = slots[i].CheckSlot();
+            Debug.Log($"Slot {i} → CheckSlot() = {result}, cardInSlot = {slots[i].cardInSlot}");
+            if(!result) all_correct = false;
         }
+
+        Debug.Log($"CheckAnswers: all_correct = {all_correct}");
 
         if(all_correct)
         {
             // Continue to next game
-            EventCatcher.Instance.SendSignalScene(true);
-            DialogueManager.Instance.isTalking = true;
-            SceneManager.LoadScene("HugoLabo");
+            Debug.Log("Showing good feedback panel");
+            if (wrongFeedbackPanel != null)
+            {
+                wrongFeedbackPanel.SetActive(false);
+            }
+            if (goodFeedbackPanel != null)
+            {
+                goodFeedbackPanel.SetActive(true);
+            }
+            else
+            {
+                Debug.LogWarning("goodFeedbackPanel is not assigned!");
+            }
         }
         else
         {
             // Play wrong feedback
+            Debug.Log("Showing wrong feedback panel");
+            if (goodFeedbackPanel != null)
+            {
+                goodFeedbackPanel.SetActive(false);
+            }
             if (wrongFeedbackPanel != null)
             {
                 wrongFeedbackPanel.SetActive(true);
+            }
+            else
+            {
+                Debug.LogWarning("wrongFeedbackPanel is not assigned!");
             }
         }
     }
@@ -44,5 +65,28 @@ public class S_DragQCMManager : MonoBehaviour
         }
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void NextScene()
+    {
+        if (goodFeedbackPanel != null)
+        {
+            goodFeedbackPanel.SetActive(false);
+        }
+
+        // Load the next scene in Build Settings if it exists.
+        int currentIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextIndex = currentIndex + 1;
+
+        if (nextIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextIndex);
+        }
+        else
+        {
+            // Last scene reached: reload first scene (index 0) or change behaviour as needed.
+            Debug.Log("NextScene: last scene reached, loading scene 0.");
+            SceneManager.LoadScene(0);
+        }
     }
 }
