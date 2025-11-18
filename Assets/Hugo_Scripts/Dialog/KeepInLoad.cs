@@ -17,7 +17,7 @@ public class KeepInLoad : MonoBehaviour
         }
     }
 
-    void ShowDialogue(bool bo)
+    public void ShowDialogue(bool bo)
     {
         dialoguePanel.SetActive(bo);
     }
