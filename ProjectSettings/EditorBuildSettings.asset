@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HugoLabo.unity
     guid: 6b5475c2e07ebde45830f8500b06f009
   - enabled: 1
+    path: Assets/Scenes/Scenes_Sylvie/Choices_Politesse.unity
+    guid: 581dad8e7919ca44ab41ea4c9bc84f30
+  - enabled: 1
     path: Assets/Scenes/Scenes_Sylvie/Bases_Politesse.unity
     guid: e875b10efaa5840438736b51952bb34e
   - enabled: 1
