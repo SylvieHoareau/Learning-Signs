@@ -579,7 +579,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ezfzfzfzfzez
+  m_text: "Whoa tu veux aller au resto?! T'es malade! Je ne sais m\xEAme pas dire
+    un mot en langue des signes, comment je vais faire pour me fondre dans la masse!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -762,8 +763,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62595b55ecaca294db9fc48ddd24aebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCControler
-  id: npc_manu
+  id: first_scene
   numberDialog: 1
+  tmp: {fileID: 769549168}
 --- !u!4 &1084818116
 Transform:
   m_ObjectHideFlags: 0
@@ -1050,6 +1052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   sign: {fileID: 1020195641}
   bonjour: {fileID: -855298285791758126, guid: 3c033c8d0ff9d2245ba6210dd9bec05a, type: 3}
+  bubble: {fileID: 628819235}
 --- !u!114 &1522161564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1094,11 +1097,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
   textMP: {fileID: 769549168}
+  currentStep: 0
   npc: {fileID: 1084818115}
   dialogBox: {fileID: 1464293175}
   PlayerPicture: {fileID: 1119245682}
   MimoPicture: {fileID: 1697912306}
   bubble: {fileID: 628819235}
+  isTalking: 1
 --- !u!4 &1556825976
 Transform:
   m_ObjectHideFlags: 0
@@ -1128,7 +1133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
   m_Actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_NotificationBehavior: 2
+  m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
