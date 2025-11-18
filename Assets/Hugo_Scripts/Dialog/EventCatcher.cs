@@ -8,6 +8,7 @@ public class EventCatcher : MonoBehaviour
     public static EventCatcher Instance;
     public static event Action<bool> ChangeScene;
     public static event Action<string> ChangeId;
+    public static event Action<string> ChangeString;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class EventCatcher : MonoBehaviour
             case "GoGameplay1":
                 SendSignalScene(false);
                 SendSignalChangeId("second_scene");
+                SendSignalChangeText("Bravo tu as réussi !");
                 DialogueManager.Instance.isTalking = false;
                 SceneManager.LoadScene("Choices_Politesse");
                 break;
@@ -46,5 +48,10 @@ public class EventCatcher : MonoBehaviour
     public void SendSignalChangeId(string id)
     {
         ChangeId?.Invoke(id);
+    }
+
+    public void SendSignalChangeText(string id)
+    {
+        ChangeString?.Invoke(id);
     }
 }
