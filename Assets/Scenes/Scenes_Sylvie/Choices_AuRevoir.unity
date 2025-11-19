@@ -5595,7 +5595,7 @@ MonoBehaviour:
   goodFeedbackPanel: {fileID: 334268196}
   wrongClip: {fileID: 8300000, guid: 875c990abfd7c1d41a551a9c24ffef4e, type: 3}
   rightClip: {fileID: 8300000, guid: e39e09e55a3d4cb4db3a1b11039f59b9, type: 3}
-  audioSource: {fileID: 1691205025}
+  sfxAudioSource: {fileID: 1691205025}
   sfxVolume: 1
 --- !u!1 &1927970042
 GameObject:

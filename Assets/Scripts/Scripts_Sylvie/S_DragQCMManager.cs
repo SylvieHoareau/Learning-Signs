@@ -9,7 +9,7 @@ public class S_DragQCMManager : MonoBehaviour
     [Header("SFX")]
     [SerializeField] private AudioClip wrongClip;
     [SerializeField] private AudioClip rightClip;
-    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource sfxAudioSource;
     [Range(0f,1f)] [SerializeField] private float sfxVolume = 1f;
 
     public void CheckAnswers()
@@ -69,9 +69,9 @@ public class S_DragQCMManager : MonoBehaviour
     private void PlaySound(AudioClip clip)
     {
         if (clip == null) return;
-        if (audioSource != null)
+        if (sfxAudioSource != null)
         {
-            audioSource.PlayOneShot(clip, sfxVolume);
+            sfxAudioSource.PlayOneShot(clip, sfxVolume);
         }
         else
         {
