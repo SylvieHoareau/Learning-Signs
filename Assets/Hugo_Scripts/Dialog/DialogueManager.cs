@@ -124,6 +124,7 @@ public class DialogueManager : MonoBehaviour
                     {
                         currentStep = int.Parse(conv.Steps[currentStep].Next);
                     }
+                    return;
                 }
             }
         }
