@@ -23,7 +23,7 @@ public class S_Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         canvas = GetComponentInParent<Canvas>();
 
         // On stocke la position et le parent d'origine
-        // startPosition = rectTransform.anchoredPosition;
+        startPosition = rectTransform.anchoredPosition;
         originalParent = transform.parent;
         originalAnchoredPos = rectTransform.anchoredPosition;
 
@@ -56,18 +56,15 @@ public class S_Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         // La carte peut être déposé sur un slot
         canvasGroup.blocksRaycasts = true;
 
-        // Si le slot n'a pas récupéré l'objet, le remettre à sa position
-        if (transform.parent == originalParent)
-        {
-            rectTransform.anchoredPosition = startPosition;
-            // transform.SetParent(originalParent);
-            // transform.localPosition = Vector3.zero; // replace correctement dans le layout original 
-        }
-
-        // Si la carte n’a PAS été placée dans un slot
+        // Si la carte n'a PAS été placée dans un slot
         if (current_slot == null)
         {
             ResetPos();
+        }
+        // Si la carte est dans un slot, l'ancrer au centre
+        else
+        {
+            rectTransform.anchoredPosition = Vector2.zero;
         }
     }
 
