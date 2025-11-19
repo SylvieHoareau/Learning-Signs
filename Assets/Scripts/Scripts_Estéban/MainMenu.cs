@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
     {
         if (DialogueManager.Instance != null)
             DialogueManager.Instance.isTalking = true;
+        if (KeepInLoad.Instance != null)
+            KeepInLoad.Instance.ShowDialogue(true);
         SceneManager.LoadSceneAsync(1);
     }
     public void QuitGame()

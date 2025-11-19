@@ -66,7 +66,7 @@ public class EventCatcher : MonoBehaviour
             case "GoMenu":
                 SendSignalScene(false);
                 SendSignalChangeId("first_scene");
-                SendSignalChangeText("Super! Maintenant on va complexifier la chose!");
+                SendSignalChangeText("Voici Mimo et Manu, deux amis qui ont soudain été téléporté dans un monde où personne n'a de tympan!");
                 DialogueManager.Instance.isTalking = false;
                 SceneManager.LoadScene("MainMenu");
                 break;
