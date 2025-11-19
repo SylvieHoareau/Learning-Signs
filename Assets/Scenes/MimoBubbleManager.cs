@@ -16,7 +16,7 @@ public class MimoBubbleManager : MonoBehaviour
     private void MimoAction(string action)
     {
         if (!bubble) return;
-        if (!sentence) return;
+        
 
         switch (action)
         {
@@ -30,9 +30,11 @@ public class MimoBubbleManager : MonoBehaviour
                 break;
             case "None":
                 bubble.SetActive(false);
+                if (!sentence) return;
                 sentence.SetActive(false);
                 break;
             case "Phrase":
+                if (!sentence) return;
                 sentence.SetActive(true);
                 break;
             default:
