@@ -4102,8 +4102,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -449, y: 121}
-  m_SizeDelta: {x: 200, y: 200}
+  m_AnchoredPosition: {x: -123.63004, y: 121}
+  m_SizeDelta: {x: 1052.7, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264085197
 MonoBehaviour:
@@ -4152,23 +4152,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1264085194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.HorizontalLayoutGroup
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GridLayoutGroup
   m_Padding:
     m_Left: 0
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 4
-  m_Spacing: 400
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
+  m_ChildAlignment: 0
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 200, y: 200}
+  m_Spacing: {x: 200, y: 100}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!1 &1300269957
 GameObject:
   m_ObjectHideFlags: 0
@@ -6041,7 +6039,6 @@ MonoBehaviour:
   - {fileID: 74410170}
   - {fileID: 524914551}
   - {fileID: 2091348849}
-  - {fileID: 0}
   wrongFeedbackPanel: {fileID: 1369892474}
   goodFeedbackPanel: {fileID: 334268196}
 --- !u!1 &1927970042
@@ -6690,6 +6687,22 @@ PrefabInstance:
       propertyPath: rectTransform
       value: 
       objectReference: {fileID: 2087672980}
+    - target: {fileID: 4482677927609238720, guid: d55f422f693247f47bbdf3af2a54d215, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4482677927609238720, guid: d55f422f693247f47bbdf3af2a54d215, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4482677927609238720, guid: d55f422f693247f47bbdf3af2a54d215, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4482677927609238720, guid: d55f422f693247f47bbdf3af2a54d215, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4866581521770099023, guid: d55f422f693247f47bbdf3af2a54d215, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6787,6 +6800,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1264085195}
     m_Modifications:
+    - target: {fileID: 246564535075167831, guid: 26c37d4549060c4459c4153c3e9aa115, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 246564535075167831, guid: 26c37d4549060c4459c4153c3e9aa115, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 2784048053195877492, guid: 26c37d4549060c4459c4153c3e9aa115, type: 3}
       propertyPath: rectTransform
       value: 
@@ -6901,12 +6922,24 @@ PrefabInstance:
       value: Entree
       objectReference: {fileID: 0}
     - target: {fileID: 766093187920351066, guid: a126d2cf4a9a70d40a190f1ab0709173, type: 3}
+      propertyPath: id
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 766093187920351066, guid: a126d2cf4a9a70d40a190f1ab0709173, type: 3}
       propertyPath: rectTransform
       value: 
       objectReference: {fileID: 2032569639}
     - target: {fileID: 2004380189069054089, guid: a126d2cf4a9a70d40a190f1ab0709173, type: 3}
       propertyPath: m_Name
       value: Image_Entree
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416156674586590585, guid: a126d2cf4a9a70d40a190f1ab0709173, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3416156674586590585, guid: a126d2cf4a9a70d40a190f1ab0709173, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 5968564363406346486, guid: a126d2cf4a9a70d40a190f1ab0709173, type: 3}
       propertyPath: m_Pivot.x
