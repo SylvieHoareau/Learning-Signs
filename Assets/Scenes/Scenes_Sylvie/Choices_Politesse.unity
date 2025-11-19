@@ -119,6 +119,73 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &9485604
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 487583641}
+    m_Modifications:
+    - target: {fileID: 2836443265766276967, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+      propertyPath: m_Name
+      value: SFX Audio Source
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132045041623185838, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.12757
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132045041623185838, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.98521
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132045041623185838, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132045041623185838, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132045041623185838, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132045041623185838, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132045041623185838, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132045041623185838, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132045041623185838, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132045041623185838, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+--- !u!82 &9485605 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7700885846266247131, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+  m_PrefabInstance: {fileID: 9485604}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9485606 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4132045041623185838, guid: 4d530a72ae612854783c289e39421f08, type: 3}
+  m_PrefabInstance: {fileID: 9485604}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &74410166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,6 +1885,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1494778766}
+  - {fileID: 9485606}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &487583642
@@ -4679,8 +4747,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42.06, y: 282}
-  m_SizeDelta: {x: 721.35, y: 50}
+  m_AnchoredPosition: {x: 43.243, y: 282}
+  m_SizeDelta: {x: 1589.8, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1455775161
 MonoBehaviour:
@@ -5929,9 +5997,9 @@ MonoBehaviour:
   - {fileID: 1920983905}
   wrongFeedbackPanel: {fileID: 1369892474}
   goodFeedbackPanel: {fileID: 334268196}
-  wrongClip: {fileID: 0}
-  rightClip: {fileID: 0}
-  sfxAudioSource: {fileID: 0}
+  wrongClip: {fileID: 8300000, guid: 875c990abfd7c1d41a551a9c24ffef4e, type: 3}
+  rightClip: {fileID: 8300000, guid: e39e09e55a3d4cb4db3a1b11039f59b9, type: 3}
+  sfxAudioSource: {fileID: 9485605}
   sfxVolume: 1
 --- !u!1 &1920983901
 GameObject:
@@ -6062,8 +6130,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 191, y: 328}
-  m_SizeDelta: {x: 551.27, y: 50}
+  m_AnchoredPosition: {x: 43.25, y: 328}
+  m_SizeDelta: {x: 1589.82, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1927970044
 MonoBehaviour:
@@ -6150,7 +6218,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -312.84802, y: 0, z: 22.443695, w: -0.41402242}
+  m_margin: {x: 2.3507693, y: 0, z: -2.3750916, w: -0.41402242}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
