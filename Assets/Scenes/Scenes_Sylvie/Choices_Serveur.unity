@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 74410168}
   - component: {fileID: 74410170}
   m_Layer: 5
-  m_Name: Image_Commander
+  m_Name: Image_Serveur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1034,7 +1034,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Entr\xE9e"
+  m_text: Le menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6af04492801420c4a872958e6de18ca8, type: 2}
   m_sharedMaterial: {fileID: 7233395229322145932, guid: 6af04492801420c4a872958e6de18ca8, type: 2}
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1099,7 +1099,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.15913384, y: 0, z: 1.8713912, w: 0.8505992}
+  m_margin: {x: -52.792076, y: 0, z: -50.76152, w: -44.66971}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1978,7 +1978,7 @@ GameObject:
   - component: {fileID: 524914549}
   - component: {fileID: 524914551}
   m_Layer: 5
-  m_Name: Image_Entree
+  m_Name: Image_Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2152,7 +2152,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2182,7 +2182,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -2.3956833, y: 0, z: -0.15875262, w: -2.2009277}
+  m_margin: {x: -50.761208, y: 0, z: -52.79167, w: -40.60877}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4094,9 +4094,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1393131302}
+  - {fileID: 309531951}
   - {fileID: 2087672980}
   - {fileID: 2032569639}
-  - {fileID: 309531951}
   - {fileID: 942983522}
   m_Father: {fileID: 894958918}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4512,7 +4512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Commander
+  m_text: Serveur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6af04492801420c4a872958e6de18ca8, type: 2}
   m_sharedMaterial: {fileID: 7233395229322145932, guid: 6af04492801420c4a872958e6de18ca8, type: 2}
@@ -4577,7 +4577,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -53.377968, y: 0, z: -53.378494, w: -0.000020005979}
+  m_margin: {x: -53.377968, y: 0, z: -53.378494, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6677,11 +6677,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 760535079087286576, guid: d55f422f693247f47bbdf3af2a54d215, type: 3}
       propertyPath: m_Name
-      value: Image_SVP
+      value: Image_Serveur
       objectReference: {fileID: 0}
     - target: {fileID: 1180085222786912746, guid: d55f422f693247f47bbdf3af2a54d215, type: 3}
       propertyPath: m_Name
-      value: SVP
+      value: Serveur
+      objectReference: {fileID: 0}
+    - target: {fileID: 2016695659601917667, guid: d55f422f693247f47bbdf3af2a54d215, type: 3}
+      propertyPath: id
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2016695659601917667, guid: d55f422f693247f47bbdf3af2a54d215, type: 3}
       propertyPath: rectTransform
@@ -6786,7 +6790,7 @@ PrefabInstance:
     - target: {fileID: 5311300567949618616, guid: d55f422f693247f47bbdf3af2a54d215, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 7028616704906629411, guid: adac6ffa3e4bba84485eccb99183170e, type: 3}
+      objectReference: {fileID: 6070451975573011512, guid: 6a1c62712ce363c4391eda3413c66c71, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6809,21 +6813,25 @@ PrefabInstance:
       value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2784048053195877492, guid: 26c37d4549060c4459c4153c3e9aa115, type: 3}
+      propertyPath: id
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2784048053195877492, guid: 26c37d4549060c4459c4153c3e9aa115, type: 3}
       propertyPath: rectTransform
       value: 
       objectReference: {fileID: 309531951}
     - target: {fileID: 3260275940480617341, guid: 26c37d4549060c4459c4153c3e9aa115, type: 3}
       propertyPath: m_Name
-      value: Commander
+      value: SVP
       objectReference: {fileID: 0}
     - target: {fileID: 4022739691886867367, guid: 26c37d4549060c4459c4153c3e9aa115, type: 3}
       propertyPath: m_Name
-      value: Image_Commander
+      value: Image_SVP
       objectReference: {fileID: 0}
     - target: {fileID: 8425062039936366383, guid: 26c37d4549060c4459c4153c3e9aa115, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 8288426215254106694, guid: 132bfaec2fc99d74ea5a75b0194f1813, type: 3}
+      objectReference: {fileID: 7028616704906629411, guid: adac6ffa3e4bba84485eccb99183170e, type: 3}
     - target: {fileID: 9139986089982389208, guid: 26c37d4549060c4459c4153c3e9aa115, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6919,7 +6927,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 89380363437402195, guid: a126d2cf4a9a70d40a190f1ab0709173, type: 3}
       propertyPath: m_Name
-      value: Entree
+      value: LeMenu
       objectReference: {fileID: 0}
     - target: {fileID: 766093187920351066, guid: a126d2cf4a9a70d40a190f1ab0709173, type: 3}
       propertyPath: id
@@ -6931,7 +6939,7 @@ PrefabInstance:
       objectReference: {fileID: 2032569639}
     - target: {fileID: 2004380189069054089, guid: a126d2cf4a9a70d40a190f1ab0709173, type: 3}
       propertyPath: m_Name
-      value: Image_Entree
+      value: Image_LeMenu
       objectReference: {fileID: 0}
     - target: {fileID: 3416156674586590585, guid: a126d2cf4a9a70d40a190f1ab0709173, type: 3}
       propertyPath: m_SizeDelta.x
@@ -7024,7 +7032,7 @@ PrefabInstance:
     - target: {fileID: 6406524468931695617, guid: a126d2cf4a9a70d40a190f1ab0709173, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 4113829005332862926, guid: 572759d3bdb327940955bb3f3533c339, type: 3}
+      objectReference: {fileID: -4941977712476370825, guid: 09eba5fbc69f9f94aaf2c203b3d12bb1, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
