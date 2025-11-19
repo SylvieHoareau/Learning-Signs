@@ -105,6 +105,10 @@ public class DialogueManager : MonoBehaviour
                     {
                         MimoPicture.color = Color.gray;
                         PlayerPicture.color = Color.white;
+                    } else
+                    {
+                        MimoPicture.color = Color.gray;
+                        PlayerPicture.color = Color.gray;
                     }
 
                     if (conv.Steps[currentStep].Event != null) {

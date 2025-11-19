@@ -31,42 +31,42 @@ public class EventCatcher : MonoBehaviour
             case "GoGameplay1":
                 SendSignalScene(false);
                 SendSignalChangeId("second_scene");
-                SendSignalChangeText("Super! Maintenant on va complexifier la chose . . .");
+                SendSignalChangeText("Avant d'aller au restaurant, Mimo montre à Manu plusieurs signes pour qu'il puisse faire une phrase:");
                 DialogueManager.Instance.isTalking = false;
                 SceneManager.LoadScene("Choices_Bonjour");
                 break;
             case "GoGameplay2":
                 SendSignalScene(false);
                 SendSignalChangeId("third_scene");
-                SendSignalChangeText("Super! Maintenant on va complexifier la chose . . .");
+                SendSignalChangeText("Très bien! Maintenant, dis \"Au Revoir\"");
                 DialogueManager.Instance.isTalking = false;
                 SceneManager.LoadScene("Choices_Politesse");
                 break;
             case "GoGameplay3":
                 SendSignalScene(false);
                 SendSignalChangeId("fourth_scene");
-                SendSignalChangeText("Super! Maintenant on va complexifier la chose . . .");
+                SendSignalChangeText("Très bien!");
                 DialogueManager.Instance.isTalking = false;
                 SceneManager.LoadScene("Choices_AuRevoir");
                 break;
             case "GoGameplay4":
                 SendSignalScene(false);
                 SendSignalChangeId("fifth_scene");
-                SendSignalChangeText("Super! Maintenant on va complexifier la chose . . .");
+                SendSignalChangeText("Super!");
                 DialogueManager.Instance.isTalking = false;
                 SceneManager.LoadScene("Choices_Serveur");
                 break;
             case "GoGameplay5":
                 SendSignalScene(false);
                 SendSignalChangeId("sixth_scene");
-                SendSignalChangeText("Super! Maintenant on va complexifier la chose . . .");
+                SendSignalChangeText("Super!");
                 DialogueManager.Instance.isTalking = false;
                 SceneManager.LoadScene("Choices_Commander");
                 break;
             case "GoMenu":
                 SendSignalScene(false);
                 SendSignalChangeId("first_scene");
-                SendSignalChangeText("Super! Maintenant on va complexifier la chose . . .");
+                SendSignalChangeText("Super! Maintenant on va complexifier la chose!");
                 DialogueManager.Instance.isTalking = false;
                 SceneManager.LoadScene("MainMenu");
                 break;

@@ -656,8 +656,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Whoa tu veux aller au resto?! T'es malade! Je ne sais m\xEAme pas dire
-    un mot en langue des signes, comment je vais faire pour me fondre dans la masse!"
+  m_text: "Voici Mimo et Manu, deux amis qui ont soudain \xE9t\xE9 t\xE9l\xE9port\xE9
+    dans un monde o\xF9 personne n'a de tympan!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6af04492801420c4a872958e6de18ca8, type: 2}
   m_sharedMaterial: {fileID: 7233395229322145932, guid: 6af04492801420c4a872958e6de18ca8, type: 2}
@@ -684,8 +684,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38
-  m_fontSizeBase: 38
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -38,6 +38,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Scenes_Sylvie/Bases_Commander_Old.unity
     guid: 237ac916a9863a649a81aa9d2d367c18
+  - enabled: 1
+    path: Assets/Scenes/Scenes_Sylvie/Choices_AuRevoir.unity
+    guid: 71c43e85b07a32e459d52c4466648def
+  - enabled: 1
+    path: Assets/Scenes/Scenes_Sylvie/Choices_Serveur.unity
+    guid: 56c6ac7236ddec749977d2b6bd4cb993
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

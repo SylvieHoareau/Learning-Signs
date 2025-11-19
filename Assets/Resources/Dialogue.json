@@ -6,32 +6,44 @@
         "steps":[
         {
         "id": "0",
-        "name": "Manu",
-        "text": "Whoa tu veux aller au resto?! T'es malade! Je ne sais même pas dire un mot en langue des signes, comment je vais faire pour me fondre dans la masse.!",
+        "name": "",
+        "text": "Dans ce monde, tout le monde parle en language des signes! Le pauvre Manu est complètement perdu, incapable de communiquer!\n",
         "next": "1"
         },
         {
         "id": "1",
-        "name": "Mimo",
-        "text": "T'inquiète pas, je t'apprend les bases vite fait et on y va. Tout va bien se passer! Et tu sais pourquoi? Car la cavalerie est là! ",
+        "name": "",
+        "text": "Surtout que Manu commence à avoir faim! Mimo, son ami, lui propose alors d'aller au restaurant!",
         "next": "2"
         },
         {
         "id": "2",
-        "name": "Mimo",
-        "text": "(en langue des signes): Bonjour",
-        "event": "Bonjour",
+        "name": "Manu",
+        "text": "Whoa tu veux aller au resto?! T'es malade! Je ne sais même pas dire un mot en langue des signes, comment je vais faire pour me fondre dans la masse.!",
         "next": "3"
         },
         {
         "id": "3",
         "name": "Mimo",
-        "text": "C'est comme ça qu'on dit bonjour. Allez, à ton tour!",
-        "event": "None",
+        "text": "T'inquiète pas, je t'apprend les bases vite fait et on y va! Tout va bien se passer! Et tu sais pourquoi? Car la cavalerie est là! ",
         "next": "4"
         },
         {
         "id": "4",
+        "name": "Mimo",
+        "text": "(en langue des signes): Bonjour",
+        "event": "Bonjour",
+        "next": "5"
+        },
+        {
+        "id": "5",
+        "name": "Mimo",
+        "text": "C'est comme ça qu'on dit bonjour! Allez, à ton tour!",
+        "event": "None",
+        "next": "6"
+        },
+        {
+        "id": "6",
         "name": "Mimo",
         "text": "",
         "event": "GoGameplay1",
@@ -46,17 +58,37 @@
         {
         "id": "0",
         "name": "",
-        "text": "<i>Avant d’aller au restaurant, Mimo montre à Manu plusieurs signes pour qu’il puisse faire une phrase</i>",
+        "text": "Avant d'aller au restaurant, Mimo montre à Manu plusieurs signes pour qu'il puisse faire une phrase",
         "next": "1"
         },
         {
         "id": "1",
-        "name": "Mimo",
-        "text": "Voilà tout ce que tu dois connaître",
+        "name": "",
+        "text": "Avant d'aller au restaurant, Mimo montre à Manu plusieurs signes pour qu'il puisse faire une phrase",
         "next": "2"
         },
         {
         "id": "2",
+        "name": "Mimo",
+        "text": "Voilà tout ce que tu dois connaître:",
+        "event":"Phrase",
+        "next": "3"
+        },
+        {
+        "id": "3",
+        "name": "Mimo",
+        "text": "Dans l'ordre ça veut dire: \"Bonjour\", \"Au revoir\", \"ça va\" et \"Merci\"",
+        "next": "4"
+        },
+        {
+        "id": "4",
+        "name": "Mimo",
+        "text": "J'espère que tu as bien retenu!",
+        "event": "None",
+        "next": "5"
+        },
+        {
+        "id": "5",
         "name": "Manu",
         "text": "",
         "event": "GoGameplay2",
@@ -71,11 +103,31 @@
         {
         "id": "0",
         "name": "Mimo",
-        "text": "Genial!",
+        "text": "Très bien! Maintenant, dis \"Au Revoir\"",
         "next": "1"
         },
         {
         "id": "1",
+        "name": "Mimo",
+        "text": "Très bien! Maintenant, dis \"Au Revoir\"",
+        "next": "2"
+        },
+        {
+        "id": "2",
+        "name": "Mimo",
+        "text": "Voici comment on fait:",
+        "event": "Aurevoir",
+        "next": "3"
+        },
+        {
+        "id": "3",
+        "name": "Mimo",
+        "text": "Essaie maintenant!",
+        "event": "None",
+        "next": "4"
+        },
+        {
+        "id": "4",
         "name": "Manu",
         "text": "",
         "event": "GoGameplay3",
@@ -89,12 +141,24 @@
         "steps":[
         {
         "id": "0",
-        "name": "Manu",
-        "text": "Genial!",
+        "name": "",
+        "text": "Après un court temps d'apprentissage, Manu et Mimo ont pris place et sont sur le point de commander!",
         "next": "1"
         },
         {
         "id": "1",
+        "name": "",
+        "text": "Après un court temps d'apprentissage, Manu et Mimo ont pris place et sont sur le point de commander!",
+        "next": "2"
+        },
+        {
+        "id": "2",
+        "name": "Mimo",
+        "text": "Tiens, appelle le serveur!",
+        "next": "3"
+        },
+        {
+        "id": "3",
         "name": "Mimo",
         "text": "",
         "event": "GoGameplay4",
@@ -108,12 +172,18 @@
         "steps":[
         {
         "id": "0",
-        "name": "Manu",
-        "text": "Genial!",
+        "name": "Mimo",
+        "text": "Maintenant, dis que tu veux commander l'entrée! N'oublie pas la politesse!",
         "next": "1"
         },
         {
         "id": "1",
+        "name": "Mimo",
+        "text": "Maintenant, dis que tu veux commander l'entrée! N'oublie pas la politesse!",
+        "next": "2"
+        },
+        {
+        "id": "2",
         "name": "Mimo",
         "text": "",
         "event": "GoGameplay5",
@@ -127,12 +197,18 @@
         "steps":[
         {
         "id": "0",
-        "name": "Manu",
-        "text": "Genial!",
+        "name": "",
+        "text": "Et c'est ainsi que Mimo et Manu eurent un bon repas, malgré les difficultés de communications!\nFIN!",
         "next": "1"
         },
         {
         "id": "1",
+        "name": "",
+        "text": "Et c'est ainsi que Mimo et Manu eurent un bon repas, malgré les difficultés de communications!\nFIN!",
+        "next": "2"
+        },
+        {
+        "id": "2",
         "name": "Mimo",
         "text": "",
         "event": "GoMenu",
