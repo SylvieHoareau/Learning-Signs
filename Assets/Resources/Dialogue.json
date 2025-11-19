@@ -45,32 +45,27 @@
         "steps":[
         {
         "id": "0",
-        "name": "Manu",
-        "text": "Bravo tu as réussi !",
+        "name": "",
+        "text": "<i>Avant d’aller au restaurant, Mimo montre à Manu plusieurs signes pour qu’il puisse faire une phrase</i>",
         "next": "1"
         },
         {
         "id": "1",
         "name": "Mimo",
-        "text": "Fin de dialogue !",
+        "text": "Voilà tout ce que tu dois connaître",
         "next": "2"
         },
         {
         "id": "2",
         "name": "Manu",
-        "text": "Fin Alternative",
-        "next": "3"
-        },
-        {
-        "id": "3",
-        "name": "Mimo",
-        "text": "Bonus text",
+        "text": "",
+        "event": "GoGameplay2",
         "next": null
         }
         ]
     },
     {
-        "id" : "player1",
+        "id" : "third_scene1",
         "maxDialog": "1",
         "steps":[
         {

@@ -30,9 +30,44 @@ public class EventCatcher : MonoBehaviour
             case "GoGameplay1":
                 SendSignalScene(false);
                 SendSignalChangeId("second_scene");
-                SendSignalChangeText("Bravo tu as réussi !");
+                SendSignalChangeText("Super! Maintenant on va complexifier la chose . . .");
                 DialogueManager.Instance.isTalking = false;
-                SceneManager.LoadScene("Choices_Politesse");
+                SceneManager.LoadScene("Choices_Bonjour");
+                break;
+            case "GoGameplay2":
+                SendSignalScene(false);
+                SendSignalChangeId("third_scene");
+                SendSignalChangeText("Super! Maintenant on va complexifier la chose . . .");
+                DialogueManager.Instance.isTalking = false;
+                SceneManager.LoadScene("Choices_Bonjour");
+                break;
+            case "GoGameplay3":
+                SendSignalScene(false);
+                SendSignalChangeId("fourth_scene");
+                SendSignalChangeText("Super! Maintenant on va complexifier la chose . . .");
+                DialogueManager.Instance.isTalking = false;
+                SceneManager.LoadScene("Choices_Bonjour");
+                break;
+            case "GoGameplay4":
+                SendSignalScene(false);
+                SendSignalChangeId("fifth_scene");
+                SendSignalChangeText("Super! Maintenant on va complexifier la chose . . .");
+                DialogueManager.Instance.isTalking = false;
+                SceneManager.LoadScene("Choices_Bonjour");
+                break;
+            case "GoGameplay5":
+                SendSignalScene(false);
+                SendSignalChangeId("sixth_scene");
+                SendSignalChangeText("Super! Maintenant on va complexifier la chose . . .");
+                DialogueManager.Instance.isTalking = false;
+                SceneManager.LoadScene("Choices_Bonjour");
+                break;
+            case "GoMenu":
+                SendSignalScene(false);
+                SendSignalChangeId("first_scene");
+                SendSignalChangeText("Super! Maintenant on va complexifier la chose . . .");
+                DialogueManager.Instance.isTalking = false;
+                SceneManager.LoadScene("Choices_Bonjour");
                 break;
             default:
                 break;
