@@ -5058,6 +5058,10 @@ MonoBehaviour:
   - {fileID: 0}
   wrongFeedbackPanel: {fileID: 1369892474}
   goodFeedbackPanel: {fileID: 334268196}
+  wrongClip: {fileID: 0}
+  rightClip: {fileID: 0}
+  audioSource: {fileID: 0}
+  sfxVolume: 1
 --- !u!224 &2087672980 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4866581521770099023, guid: d55f422f693247f47bbdf3af2a54d215, type: 3}
@@ -5146,6 +5150,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 487583641}
     m_Modifications:
+    - target: {fileID: 845908422659589185, guid: 0c1dd0e9aa1e184468dc063c83c0fef3, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: d237fc9a0b0d5a14085ebc53c1dc93a8, type: 3}
     - target: {fileID: 2581753309355927821, guid: 0c1dd0e9aa1e184468dc063c83c0fef3, type: 3}
       propertyPath: m_Name
       value: Audio Source
