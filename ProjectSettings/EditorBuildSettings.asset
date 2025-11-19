@@ -18,11 +18,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Scenes_Sylvie/Choices_Politesse.unity
     guid: 581dad8e7919ca44ab41ea4c9bc84f30
   - enabled: 1
-    path: Assets/Scenes/Scenes_Sylvie/Bases_Politesse.unity
+    path: Assets/Scenes/Scenes_Sylvie/Bases_Politesse_Old.unity
     guid: e875b10efaa5840438736b51952bb34e
+  - enabled: 0
+    path: Assets/Scenes/Scenes_Sylvie/Choices_Bonjour_Old.unity
+    guid: aa9f7ef53cc340b4c87604042079a54c
+  - enabled: 1
+    path: Assets/Scenes/Scenes_Sylvie/Choices_Commander.unity
+    guid: 2cf527c4be9ac5242b0939c4d34438ca
   - enabled: 1
     path: Assets/Scenes/Scenes_Sylvie/Choices_Bonjour.unity
-    guid: aa9f7ef53cc340b4c87604042079a54c
+    guid: c2e1701f396216a4eb7d09de129e7d73
+  - enabled: 1
+    path: Assets/Scenes/Scenes_Sylvie/Bases_Commander.unity
+    guid: 237ac916a9863a649a81aa9d2d367c18
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
