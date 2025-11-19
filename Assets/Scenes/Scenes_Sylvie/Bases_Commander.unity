@@ -486,8 +486,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 37
+  m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 36
@@ -2877,7 +2877,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Oui
+  m_text: "S'il vous pla\xEEt"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6af04492801420c4a872958e6de18ca8, type: 2}
   m_sharedMaterial: {fileID: 7233395229322145932, guid: 6af04492801420c4a872958e6de18ca8, type: 2}
@@ -2904,8 +2904,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 37
+  m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3189,7 +3189,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Th\xE8me : La politesse"
+  m_text: "Th\xE8me : Commander"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6af04492801420c4a872958e6de18ca8, type: 2}
   m_sharedMaterial: {fileID: 7233395229322145932, guid: 6af04492801420c4a872958e6de18ca8, type: 2}
@@ -3216,8 +3216,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 37
+  m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 60
@@ -3930,8 +3930,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 37
+  m_fontSizeBase: 37
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 24
@@ -5441,6 +5441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Commander
       objectReference: {fileID: 0}
+    - target: {fileID: 6758267100975801806, guid: f087b7a8d00f1b14e9a4bf89cb8f7662, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8288426215254106694, guid: 132bfaec2fc99d74ea5a75b0194f1813, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5573,6 +5577,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5311300567949618616, guid: d55f422f693247f47bbdf3af2a54d215, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7028616704906629411, guid: adac6ffa3e4bba84485eccb99183170e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5627,7 +5635,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3036372198838433978, guid: f55f558db96661949bcf8f82e92b10aa, type: 3}
       propertyPath: m_text
-      value: Ca va
+      value: "Entr\xE9e"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3036372198838433978, guid: f55f558db96661949bcf8f82e92b10aa, type: 3}
+      propertyPath: m_fontSize
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 3036372198838433978, guid: f55f558db96661949bcf8f82e92b10aa, type: 3}
       propertyPath: m_margin.x
@@ -5636,6 +5648,10 @@ PrefabInstance:
     - target: {fileID: 3036372198838433978, guid: f55f558db96661949bcf8f82e92b10aa, type: 3}
       propertyPath: m_margin.z
       value: 1.4390559
+      objectReference: {fileID: 0}
+    - target: {fileID: 3036372198838433978, guid: f55f558db96661949bcf8f82e92b10aa, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 3036372198838433978, guid: f55f558db96661949bcf8f82e92b10aa, type: 3}
       propertyPath: m_VerticalAlignment
@@ -5725,6 +5741,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5989603400636753788, guid: f55f558db96661949bcf8f82e92b10aa, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4113829005332862926, guid: 572759d3bdb327940955bb3f3533c339, type: 3}
     - target: {fileID: 6444744692717905349, guid: f55f558db96661949bcf8f82e92b10aa, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5
