@@ -6,6 +6,11 @@ public class S_DragQCMManager : MonoBehaviour
     [SerializeField] private S_DropSlot[] slots;
     [SerializeField] private GameObject wrongFeedbackPanel;
     [SerializeField] private GameObject goodFeedbackPanel;
+    [Header("SFX")]
+    [SerializeField] private AudioClip wrongClip;
+    [SerializeField] private AudioClip rightClip;
+    [SerializeField] private AudioSource audioSource;
+    [Range(0f,1f)] [SerializeField] private float sfxVolume = 1f;
 
     public void CheckAnswers()
     {
@@ -34,6 +39,7 @@ public class S_DragQCMManager : MonoBehaviour
                 KeepInLoad.Instance.ShowDialogue(true);
                 DialogueManager.Instance.isTalking = true;
                 goodFeedbackPanel.SetActive(true);
+                PlaySound(rightClip);
             }
             else
             {
@@ -51,11 +57,26 @@ public class S_DragQCMManager : MonoBehaviour
             if (wrongFeedbackPanel != null)
             {
                 wrongFeedbackPanel.SetActive(true);
+                PlaySound(wrongClip);
             }
             else
             {
                 Debug.LogWarning("wrongFeedbackPanel is not assigned!");
             }
+        }
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        if (clip == null) return;
+        if (audioSource != null)
+        {
+            audioSource.PlayOneShot(clip, sfxVolume);
+        }
+        else
+        {
+            Vector3 pos = Camera.main != null ? Camera.main.transform.position : Vector3.zero;
+            AudioSource.PlayClipAtPoint(clip, pos, sfxVolume);
         }
     }
 
